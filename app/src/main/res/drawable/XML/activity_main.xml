@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/slot35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3pm-5pm"
+            />
+
+        <Button
+            android:id="@+id/slot57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5pm-7pm"
+            />
+
+        <Button
+            android:id="@+id/slot79"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7pm-9pm"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/slot911"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9pm-11pm"
+            />
+
+        <Button
+            android:id="@+id/slot111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="11pm-1am"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Book"
+        />
+    <TextView
+        android:id="@+id/bktv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+
+
+</LinearLayout>

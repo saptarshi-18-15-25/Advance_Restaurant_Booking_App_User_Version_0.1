@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".TimeSelectActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <Button
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:text="3pm-5pm"
+        android:padding="20dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/time_btn_style"
+        android:layout_marginRight="3dp"
+        android:id="@+id/slot35"/>
+
+    <Button
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:text="5pm-7pm"
+        android:padding="20dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/time_btn_style"
+        android:layout_marginRight="3dp"
+        android:id="@+id/slot57"/>
+
+    <Button
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:textColor="#ffffff"
+        android:padding="20dp"
+        android:background="@drawable/time_btn_style"
+        android:text="7pm-9pm"
+        android:id="@+id/slot79"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <Button
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:text="9pm-11pm"
+        android:textColor="#ffffff"
+        android:padding="20dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/time_btn_style"
+        android:id="@+id/slot911"/>
+
+    <Button
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:text="11pm-1am"
+        android:textColor="#ffffff"
+        android:padding="20dp"
+        android:background="@drawable/time_btn_style"
+        android:id="@+id/slot111"/>
+
+</LinearLayout>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Book"
+        android:background="@drawable/book_btn_style"
+        android:textColor="#03a31c"
+        android:id="@+id/btn"
+        android:layout_marginTop="28dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_height="200dp"
+        android:layout_width="200dp"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:id="@+id/bktv"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="30dp"
+        android:layout_marginBottom="50dp">
+
+        <ImageView
+            android:src="@drawable/booking_nev"
+            android:id="@+id/leftNev"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/ic_home"
+            android:id="@+id/centerNev"
+            android:layout_marginLeft="80dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/nv"
+            android:id="@+id/rightNev"
+            android:layout_marginLeft="70dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

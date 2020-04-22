@@ -1,0 +1,192 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    package="com.example.restro"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="22"
+9-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml
+11
+12    <dist:module dist:instant="true" />
+12-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:6:5-40
+12-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:6:18-37
+13
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:8:5-65
+14-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:8:22-62
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:9:5-67
+15-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:9:22-64
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:10:5-81
+16-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:10:22-78
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-database:16.0.4] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\9bda683461007aac17a0123f2ef003e3\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:5-79
+17-->[com.google.firebase:firebase-database:16.0.4] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\9bda683461007aac17a0123f2ef003e3\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:22-76
+18
+19    <application
+19-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:12:5-58:19
+20        android:allowBackup="true"
+20-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:13:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.2.0] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\2a4608b1875c997c47623a6260c97144\core-1.2.0\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:14:9-43
+24        android:label="@string/app_name"
+24-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:15:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:16:9-54
+26        android:supportsRtl="true"
+26-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:17:9-35
+27        android:theme="@style/AppTheme" >
+27-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:18:9-40
+28        <activity android:name="com.example.restro.Food_Details_Activity" />
+28-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:19:9-58
+28-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:19:19-56
+29        <activity
+29-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:21:9-23:81
+30            android:name="com.example.restro.CameraActivity"
+30-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:22:13-43
+31            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+31-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:23:13-69
+32        <activity
+32-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:24:9-26:72
+33            android:name="com.example.restro.HomeActivity"
+33-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:25:13-41
+34            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+34-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:26:13-69
+35        <activity
+35-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:27:9-29:72
+36            android:name="com.example.restro.ShowBookingActivity"
+36-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:28:13-48
+37            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+37-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:29:13-69
+38        <activity
+38-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:30:9-32:72
+39            android:name="com.example.restro.TimeSelectActivity"
+39-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:31:13-47
+40            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+40-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:32:13-69
+41        <activity
+41-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:33:9-35:72
+42            android:name="com.example.restro.TableSelelctActivity"
+42-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:34:13-49
+43            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+43-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:35:13-69
+44        <activity
+44-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:36:9-38:72
+45            android:name="com.example.restro.DateSelelctActivity"
+45-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:37:13-48
+46            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+46-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:38:13-69
+47        <activity
+47-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:39:9-41:75
+48            android:name="com.example.restro.RegistrationActivity"
+48-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:40:13-49
+49            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+49-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:41:13-72
+50        <activity
+50-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:42:9-50:20
+51            android:name="com.example.restro.LoginActivity"
+51-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:43:13-42
+52            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+52-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:44:13-72
+53            <intent-filter>
+53-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:45:13-49:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:46:17-69
+54-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:46:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:48:17-77
+56-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:48:27-74
+57            </intent-filter>
+58        </activity>
+59        <activity
+59-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:51:9-53:47
+60            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+60-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:52:13-76
+61            android:theme="@style/AppTheme" />
+61-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:53:13-44
+62
+63        <meta-data
+63-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:55:9-57:35
+64            android:name="com.google.android.gsm.vision.DEPENDENCIES"
+64-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:56:13-70
+65            android:value="orc" />
+65-->C:\Users\SAPTARSHI\AndroidStudioProjects\Restro\app\src\main\AndroidManifest.xml:57:13-32
+66
+67        <activity
+67-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\de95d4387f877aa4bdcb9f5df728cb54\jetified-firebase-auth-16.0.5\AndroidManifest.xml:24:9-31:50
+68            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+68-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\de95d4387f877aa4bdcb9f5df728cb54\jetified-firebase-auth-16.0.5\AndroidManifest.xml:25:13-85
+69            android:excludeFromRecents="true"
+69-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\de95d4387f877aa4bdcb9f5df728cb54\jetified-firebase-auth-16.0.5\AndroidManifest.xml:26:13-46
+70            android:exported="true"
+70-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\de95d4387f877aa4bdcb9f5df728cb54\jetified-firebase-auth-16.0.5\AndroidManifest.xml:27:13-36
+71            android:launchMode="singleTask"
+71-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\de95d4387f877aa4bdcb9f5df728cb54\jetified-firebase-auth-16.0.5\AndroidManifest.xml:28:13-44
+72            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+72-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\de95d4387f877aa4bdcb9f5df728cb54\jetified-firebase-auth-16.0.5\AndroidManifest.xml:29:13-102
+73            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+73-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\de95d4387f877aa4bdcb9f5df728cb54\jetified-firebase-auth-16.0.5\AndroidManifest.xml:30:13-72
+74
+75        <service
+75-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\de95d4387f877aa4bdcb9f5df728cb54\jetified-firebase-auth-16.0.5\AndroidManifest.xml:33:9-39:19
+76            android:name="com.google.firebase.components.ComponentDiscoveryService"
+76-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\de95d4387f877aa4bdcb9f5df728cb54\jetified-firebase-auth-16.0.5\AndroidManifest.xml:34:13-84
+77            android:exported="false" >
+77-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\de95d4387f877aa4bdcb9f5df728cb54\jetified-firebase-auth-16.0.5\AndroidManifest.xml:35:13-37
+78            <meta-data
+78-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\de95d4387f877aa4bdcb9f5df728cb54\jetified-firebase-auth-16.0.5\AndroidManifest.xml:36:13-38:85
+79                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+79-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\de95d4387f877aa4bdcb9f5df728cb54\jetified-firebase-auth-16.0.5\AndroidManifest.xml:37:17-109
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\de95d4387f877aa4bdcb9f5df728cb54\jetified-firebase-auth-16.0.5\AndroidManifest.xml:38:17-82
+81        </service>
+82
+83        <activity
+83-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\951b5e7f354daaaf8db57d3e12181016\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+84            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+84-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\951b5e7f354daaaf8db57d3e12181016\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+85            android:exported="false"
+85-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\951b5e7f354daaaf8db57d3e12181016\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+86            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+86-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\951b5e7f354daaaf8db57d3e12181016\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+87
+88        <provider
+88-->[com.google.firebase:firebase-common:16.0.3] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\86116592fb8598d1bb26654b42ebe727\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
+89            android:name="com.google.firebase.provider.FirebaseInitProvider"
+89-->[com.google.firebase:firebase-common:16.0.3] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\86116592fb8598d1bb26654b42ebe727\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
+90            android:authorities="com.example.restro.firebaseinitprovider"
+90-->[com.google.firebase:firebase-common:16.0.3] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\86116592fb8598d1bb26654b42ebe727\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
+91            android:exported="false"
+91-->[com.google.firebase:firebase-common:16.0.3] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\86116592fb8598d1bb26654b42ebe727\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
+92            android:initOrder="100" />
+92-->[com.google.firebase:firebase-common:16.0.3] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\86116592fb8598d1bb26654b42ebe727\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
+93
+94        <meta-data
+94-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\a276cf745ede409a23bbea40947ae50f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+95            android:name="com.google.android.gms.version"
+95-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\a276cf745ede409a23bbea40947ae50f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+96            android:value="@integer/google_play_services_version" />
+96-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\a276cf745ede409a23bbea40947ae50f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+97
+98        <provider
+98-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\28573f39daf86dfd120980829755ad4b\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+99            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+99-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\28573f39daf86dfd120980829755ad4b\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+100            android:authorities="com.example.restro.lifecycle-process"
+100-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\28573f39daf86dfd120980829755ad4b\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+101            android:exported="false"
+101-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\28573f39daf86dfd120980829755ad4b\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+102            android:multiprocess="true" />
+102-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\SAPTARSHI\.gradle\caches\transforms-2\files-2.1\28573f39daf86dfd120980829755ad4b\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+103    </application>
+104
+105</manifest>

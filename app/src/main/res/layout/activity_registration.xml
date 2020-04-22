@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:gravity="center" tools:context=".RegistrationActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/login2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#3fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlogo"
+            android:text="Restro"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:layout_height="50dp"
+            android:layout_width="250dp"
+            android:textAlignment="center"
+            android:textColorHint="#ffffff"
+            android:hint="Enter Name"
+            android:id="@+id/name"
+            android:background="@drawable/edittext_style"/>
+
+        <EditText
+            android:layout_height="50dp"
+            android:layout_width="250dp"
+            android:textColorHint="#ffffff"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_style"
+            android:textAlignment="center"
+            android:hint="Enter Ph. No."
+            android:id="@+id/ph"/>
+
+        <EditText
+            android:layout_height="50dp"
+            android:layout_width="250dp"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:textColorHint="#ffffff"
+            android:background="@drawable/edittext_style"
+            android:hint="Set Password"
+            android:id="@+id/pswd"/>
+
+        <Button
+            android:layout_height="50dp"
+            android:layout_width="250dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/reg"
+            android:textColor="#654321"
+            android:background="@drawable/sec_btn_style"
+            android:text="Register"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

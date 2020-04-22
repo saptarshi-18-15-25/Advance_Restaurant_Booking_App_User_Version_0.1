@@ -1,0 +1,181 @@
+/*
+ * Copyright 2018 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package androidx.fragment.app;
+
+import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP_PREFIX;
+
+import android.content.Context;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.IdRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RestrictTo;
+import androidx.annotation.StringRes;
+
+import java.io.FileDescriptor;
+import java.io.PrintWriter;
+import java.util.List;
+
+/**
+ * Static library support version of the framework's {@link android.app.FragmentManager}.
+ * Used to write apps that run on platforms prior to Android 3.0.  When running
+ * on Android 3.0 or above, this implementation is still used; it does not try
+ * to switch to the framework's implementation.  See the framework {@link FragmentManager}
+ * documentation for a class overview.
+ *
+ * <p>Your activity must derive from {@link FragmentActivity} to use this. From such an activity,
+ * you can acquire the {@link FragmentManager} by calling
+ * {@link FragmentActivity#getSupportFragmentManager}.
+ */
+public abstract class FragmentManager {
+    static final FragmentFactory DEFAULT_FACTORY = new FragmentFactory();
+
+    /**
+     * Representation of an entry on the fragment back stack, as created
+     * with {@link FragmentTransaction#addToBackStack(String)
+     * FragmentTransaction.addToBackStack()}.  Entries can later be
+     * retrieved with {@link FragmentManager#getBackStackEntryAt(int)
+     * FragmentManager.getBackStackEntryAt()}.
+     *
+     * <p>Note that you should never hold on to a BackStackEntry object;
+     * the identifier as returned by {@link #getId} is the only thing that
+     * will be persisted across activity instances.
+     */
+    public interface BackStackEntry {
+        /**
+         * Return the unique identifier for the entry.  This is the only
+         * representation of the entry that will persist across activity
+         * instances.
+         */
+        public int getId();
+
+        /**
+         * Get the name that was supplied to
+         * {@link FragmentTransaction#addToBackStack(String)
+         * FragmentTransaction.addToBackStack(String)} when creating this entry.
+         */
+        @Nullable
+        public String getName();
+
+        /**
+         * Return the full bread crumb title resource identifier for the entry,
+         * or 0 if it does not have one.
+         */
+        @StringRes
+        public int getBreadCrumbTitleRes();
+
+        /**
+         * Return the short bread crumb title resource identifier for the entry,
+         * or 0 if it does not have one.
+         */
+        @StringRes
+        public int getBreadCrumbShortTitleRes();
+
+        /**
+         * Return the full bread crumb title for the entry, or null if it
+         * does not have one.
+         */
+        @Nullable
+        public CharSequence getBreadCrumbTitle();
+
+        /**
+         * Return the short bread crumb title for the entry, or null if it
+         * does not have one.
+         */
+        @Nullable
+        public CharSequence getBreadCrumbShortTitle();
+    }
+
+    /**
+     * Interface to watch for changes to the back stack.
+     */
+    public interface OnBackStackChangedListener {
+        /**
+         * Called whenever the contents of the back stack change.
+         */
+        public void onBackStackChanged();
+    }
+
+    private FragmentFactory mFragmentFactory = null;
+
+    /**
+     * Start a series of edit operations on the Fragments associated with
+     * this FragmentManager.
+     *
+     * <p>Note: A fragment transaction can only be created/committed prior
+     * to an activity saving its state.  If you try to commit a transaction
+     * after {@link FragmentActivity#onSaveInstanceState FragmentActivity.onSaveInstanceState()}
+     * (and prior to a following {@link FragmentActivity#onStart FragmentActivity.onStart}
+     * or {@link FragmentActivity#onResume FragmentActivity.onResume()}, you will get an error.
+     * This is because the framework takes care of saving your current fragments
+     * in the state, and if changes are made after the state is saved then they
+     * will be lost.</p>
+     */
+    @NonNull
+    public abstract FragmentTransaction beginTransaction();
+
+    /**
+     * @hide -- remove once prebuilts are in.
+     * @deprecated
+     */
+    @RestrictTo(LIBRARY_GROUP_PREFIX)
+    @Deprecated
+    @NonNull
+    public FragmentTransaction openTransaction() {
+        return beginTransaction();
+    }
+
+    /**
+     * After a {@link FragmentTransaction} is committed with
+     * {@link FragmentTransaction#commit FragmentTransaction.commit()}, it
+     * is scheduled to be executed asynchronously on the process's main thread.
+     * If you want to immediately executing any such pending operations, you
+     * can call this function (only from the main thread) to do so.  Note that
+     * all callbacks and other related behavior will be done from within this
+     * call, so be careful about where this is called from.
+     *
+     * <p>If you are committing a single transaction that does not modify the
+     * fragment back stack, strongly consider using
+     * {@link FragmentTransaction#commitNow()} instead. This can help avoid
+     * unwanted side effects when other code in your app has pending committed
+     * transactions that expect different timing.</p>
+     * <p>
+     * This also forces the start of any postponed Transactions where
+     * {@link Fragment#postponeEnterTransition()} has been called.
+     *
+     * @return Returns true if there were any pending transactions to be
+     * executed.
+     */
+    public abstract boolean executePendingTransactions();
+
+    /**
+     * Finds a fragment that was identified by the given id either when inflated
+     * from XML or as the container ID when added in a transaction.  This first
+     * searches through fragments that are currently added to the manager's
+     * activity; if no such fragment is found, then all fragments currently
+     * on the back stack associated with this ID are searched.
+     * @return The fragment if found or null otherwise.
+     */
+    @Nullable
+    public abstract Fragment findFragmentById(@IdRes int id);
+
+    /**
+     * Finds a fragment that was identified by the giv
